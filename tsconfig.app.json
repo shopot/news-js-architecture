@@ -1,0 +1,40 @@
+{
+  "baseUrl": "./",
+  "target": "ESNext",
+  "lib": [
+    "DOM",
+    "DOM.Iterable",
+    "ESNext"
+  ],
+  "module": "ESNext",
+  "skipLibCheck": true,
+  /* Bundler mode */
+  "moduleResolution": "Node",
+  "allowSyntheticDefaultImports": true,
+  "allowImportingTsExtensions": true,
+  "resolveJsonModule": true,
+  "isolatedModules": true,
+  "noEmit": true,
+  "jsx": "react-jsx",
+  /* Linting */
+  "strict": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "noFallthroughCasesInSwitch": true,
+  "include": [
+    "env.d.ts",
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/**/__tests__/*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+},
