@@ -1,1 +1,1 @@
-# news-js-architecture
+# news-js-sliced
