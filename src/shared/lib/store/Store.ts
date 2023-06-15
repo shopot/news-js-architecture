@@ -14,7 +14,7 @@ export default class Store<TState> {
    */
   constructor(initialState: TState) {
     // Initial new state
-    this.state = structuredClone(initialState);
+    this.state = structuredClone<TState>(initialState);
 
     // Initial observers
     this.observers = new Map();
@@ -26,7 +26,7 @@ export default class Store<TState> {
    * @returns
    */
   public getState(): TState {
-    return structuredClone(this.state);
+    return structuredClone<TState>(this.state);
   }
 
   public setState(stateNext: Partial<TState>): void {
