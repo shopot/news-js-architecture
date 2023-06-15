@@ -1,4 +1,3 @@
-import { deepCopy } from '../helpers';
 import { ObserverInterface } from './types';
 
 /**
@@ -15,7 +14,7 @@ export default class Store<TState> {
    */
   constructor(initialState: TState) {
     // Initial new state
-    this.state = deepCopy<TState>(initialState);
+    this.state = structuredClone(initialState);
 
     // Initial observers
     this.observers = new Map();
@@ -27,7 +26,7 @@ export default class Store<TState> {
    * @returns
    */
   public getState(): TState {
-    return deepCopy<TState>(this.state);
+    return structuredClone(this.state);
   }
 
   public setState(stateNext: Partial<TState>): void {
