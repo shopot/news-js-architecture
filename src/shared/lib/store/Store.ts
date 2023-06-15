@@ -12,7 +12,6 @@ export default class Store<TState> {
    * Constructor
    *
    * @param initialState
-   * @param reducer
    */
   constructor(initialState: TState) {
     // Initial new state
