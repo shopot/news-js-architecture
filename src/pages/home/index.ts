@@ -6,13 +6,11 @@ export const homePage = (): HTMLElement => {
   const sources = sourcesList();
   const news = newsList();
 
-  const main = createElement(
+  return createElement(
     'main',
     {
       className: 'main',
     },
     [sources, news]
   );
-
-  return main;
 };
