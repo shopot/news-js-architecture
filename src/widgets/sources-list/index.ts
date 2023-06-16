@@ -2,7 +2,7 @@ import './styles.css';
 
 import { sourcesItem, sourceStore } from '@/entities/source';
 import { createElement } from '@/shared/lib';
-import { loadNews } from '@/features/load-news';
+import { loadNews } from '@/features/news';
 
 export const sourcesList = () => {
   const rootElement = createElement('div', {
