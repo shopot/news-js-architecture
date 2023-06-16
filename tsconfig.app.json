@@ -32,7 +32,6 @@
   "compilerOptions": {
     "composite": true,
     "removeComments": true,
-    "declaration": true,
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "node",
