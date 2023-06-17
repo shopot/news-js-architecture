@@ -1,4 +1,4 @@
-import { API_KEY_OPTIONS, API_URL } from '@/shared/config';
+import { API_KEY_OPTIONS, API_URL } from '../config';
 
 const BASE_URL = '/top-headlines/sources';
 
