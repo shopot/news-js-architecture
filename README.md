@@ -1,1 +1,1 @@
-# news-js-sliced
+# news-js-layers
