@@ -3,3 +3,5 @@ export const API_URL = import.meta.env.PROD
   : 'https://newsapi.org/v2';
 
 export const API_KEY_OPTIONS = `apiKey=${import.meta.env.VITE_API_KEY}`;
+
+export const USE_FAKE_DATA = true;
